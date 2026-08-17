@@ -44,7 +44,7 @@ body {
 }
 
 .col {
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     padding-left: calc(var(--spacer-x, var(--gutter)) / 2);
     padding-right: calc(var(--spacer-x, var(--gutter)) / 2);
     margin-top: var(--spacer-y, var(--gutter));
