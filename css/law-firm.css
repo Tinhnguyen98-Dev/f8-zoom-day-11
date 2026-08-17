@@ -75,17 +75,19 @@ button {
 
 /* Header */
 .wrapper {
-    width: 1440px;
+    /* width: 1440px; */
+    max-width: 100%;
     margin: 0 auto;
     padding-top: 54px;
     position: relative;
+    overflow-x: clip;
 }
 
 .wrapper-background::before {
     content: "";
     display: block;
     inset: 0;
-    height: 859px;
+    height: 1300px;
     position: absolute;
     background-color: #f8ebc9;
 }
@@ -100,7 +102,7 @@ button {
 .row-heading {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     min-height: 67px;
 }
 
@@ -264,15 +266,20 @@ button {
     color: #fff;
 }
 
-.img-around {
+.img-content {
     position: relative;
 }
 
-.img-content {
+.img-around {
     width: 570px;
     height: 570px;
     object-fit: cover;
+    object-position: center;
     overflow: hidden;
+}
+
+.thumb-about-us {
+    width: 100%;
 }
 
 .mask-about-us {
@@ -328,7 +335,7 @@ button {
     color: var(--color-character);
 }
 
-.text-content {
+.wrapper-services .text-content {
     margin-left: auto;
     margin-right: auto;
 }
@@ -338,8 +345,8 @@ button {
 }
 
 .service-item {
-    width: 370px;
-    height: 370px;
+    width: 100%;
+    height: inherit;
     overflow: hidden;
     position: relative;
 }
@@ -396,6 +403,10 @@ button {
     background-color: var(--color-main);
 }
 
+.thumb-feature {
+    width: 100%;
+}
+
 .mask-feature {
     position: absolute;
     left: 0;
@@ -448,8 +459,7 @@ button {
 }
 
 .team-item {
-    width: 370px;
-    height: 370px;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -736,8 +746,7 @@ button {
 }
 
 .img-blog {
-    width: 370px;
-    height: 370px;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
 }
@@ -810,6 +819,11 @@ button {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--color-green);
+}
+
+.wrapper-cta .col-469 {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper-cta .sub-heading {
