@@ -411,7 +411,7 @@ button {
     position: absolute;
     left: 0;
     top: 191px;
-    transform: translateX(-49px);
+    transform: translateX(-45%);
 }
 
 .wrapper-features .sub-title {
@@ -458,8 +458,18 @@ button {
     text-align: center;
 }
 
+.wrapper-team .text-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-menu {
+    margin-top: 70px;
+}
+
 .team-item {
     width: 100%;
+    object-fit: cover;
     overflow: hidden;
     position: relative;
 }
@@ -484,6 +494,8 @@ button {
 }
 
 .thumb-team {
+    width: 100%;
+    object-fit: cover;
     transform: scale(1);
     transition: transform 0.4s ease;
 }
@@ -521,9 +533,12 @@ button {
 }
 
 .award-item {
-    width: 270px;
-    height: 270px;
+    width: 100%;
     overflow: hidden;
+}
+
+.thumb-award {
+    width: 100%;
 }
 
 .wrapper-awards .row {
